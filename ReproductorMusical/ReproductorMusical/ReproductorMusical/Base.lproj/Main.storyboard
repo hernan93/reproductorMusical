@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gCe-Xy-bSc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ReproductorMusical" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Titulo de la canción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppS-jJ-594">
+                                <rect key="frame" x="40" y="291" width="335" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Rm2-ne-lGz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" systemColor="systemRedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vinilo" id="lAY-qR-UMi">
+                                <rect key="frame" x="98" y="106" width="219" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mg5-RI-UhK">
+                                <rect key="frame" x="30" y="365" width="353" height="384"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES" adjustable="YES"/>
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPf-f9-0C0">
+                                <rect key="frame" x="134" y="784" width="153" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button" image="playpause.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="reproducir_pausar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yUu-4y-WbU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt7-l9-1yZ">
+                                <rect key="frame" x="296" y="784" width="98" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="EhD-M7-lAq"/>
+                                    <constraint firstAttribute="height" constant="40" id="aW2-0Z-wOy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button" image="forward.end.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="siguiente_cancion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RMC-0C-ufY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqz-nC-KcS">
+                                <rect key="frame" x="40" y="331" width="335" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lf6-ek-9wO">
+                                <rect key="frame" x="30" y="784" width="88" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="VFY-Jk-ga1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="backward.end.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="anterior_cancion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QBO-ZD-ObH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ppS-jJ-594" firstAttribute="trailing" secondItem="iqz-nC-KcS" secondAttribute="trailing" id="51d-oM-2du"/>
+                            <constraint firstItem="ppS-jJ-594" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="7C7-mi-3tU"/>
+                            <constraint firstItem="Lf6-ek-9wO" firstAttribute="top" secondItem="Mg5-RI-UhK" secondAttribute="bottom" constant="35" id="CLm-tZ-BAm"/>
+                            <constraint firstItem="dPf-f9-0C0" firstAttribute="leading" secondItem="Lf6-ek-9wO" secondAttribute="trailing" constant="16" id="Emr-9L-CEN"/>
+                            <constraint firstItem="Mg5-RI-UhK" firstAttribute="leading" secondItem="Lf6-ek-9wO" secondAttribute="leading" id="LEm-gK-6fI"/>
+                            <constraint firstItem="ppS-jJ-594" firstAttribute="top" secondItem="lAY-qR-UMi" secondAttribute="bottom" constant="15" id="Mc9-pc-1P4"/>
+                            <constraint firstItem="dPf-f9-0C0" firstAttribute="top" secondItem="Vt7-l9-1yZ" secondAttribute="top" id="bCO-hQ-SZ5"/>
+                            <constraint firstItem="Mg5-RI-UhK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="cYF-pZ-Ye9"/>
+                            <constraint firstItem="Mg5-RI-UhK" firstAttribute="top" secondItem="iqz-nC-KcS" secondAttribute="bottom" constant="8" id="ciJ-f1-1pk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Lf6-ek-9wO" secondAttribute="bottom" constant="30" id="dso-if-dIb"/>
+                            <constraint firstItem="ppS-jJ-594" firstAttribute="centerX" secondItem="lAY-qR-UMi" secondAttribute="centerX" id="erm-vV-XuS"/>
+                            <constraint firstItem="Vt7-l9-1yZ" firstAttribute="leading" secondItem="dPf-f9-0C0" secondAttribute="trailing" constant="9" id="gsn-lO-zx4"/>
+                            <constraint firstItem="Lf6-ek-9wO" firstAttribute="top" secondItem="dPf-f9-0C0" secondAttribute="top" id="m3L-Ta-R0Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vt7-l9-1yZ" secondAttribute="bottom" constant="38" id="npF-yx-Lbz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dPf-f9-0C0" secondAttribute="bottom" constant="36" id="ot1-Lb-5Tj"/>
+                            <constraint firstItem="ppS-jJ-594" firstAttribute="leading" secondItem="iqz-nC-KcS" secondAttribute="leading" id="sWl-nC-1SD"/>
+                            <constraint firstItem="Mg5-RI-UhK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="saZ-ff-8Lz"/>
+                            <constraint firstItem="Vt7-l9-1yZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="vti-hh-z37"/>
+                            <constraint firstItem="iqz-nC-KcS" firstAttribute="top" secondItem="ppS-jJ-594" secondAttribute="bottom" constant="15" id="vwm-1r-rsM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="GTW-zh-YZe"/>
+                    <connections>
+                        <outlet property="artista" destination="iqz-nC-KcS" id="AEc-DB-ahS"/>
+                        <outlet property="letraCancion" destination="Mg5-RI-UhK" id="i9A-VC-a8Q"/>
+                        <outlet property="playSound" destination="dPf-f9-0C0" id="9nB-SR-xzV"/>
+                        <outlet property="portada" destination="lAY-qR-UMi" id="lWc-5D-rTl"/>
+                        <outlet property="titulo_cancion" destination="ppS-jJ-594" id="JPP-LK-db7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="578.39999999999998" y="87.192118226600982"/>
+        </scene>
+        <!--Mis Canciones-->
+        <scene sceneID="MUm-jd-egf">
+            <objects>
+                <tableViewController id="6FO-R6-ReC" customClass="TableViewController" customModule="ReproductorMusical" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dIC-4N-eKD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" rowHeight="111" id="R8t-iC-yyG">
+                                <rect key="frame" x="0.0" y="28" width="414" height="111"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R8t-iC-yyG" id="hb8-Mv-lWN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BAf-y2-w3A"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6FO-R6-ReC" id="lub-dx-BzO"/>
+                            <outlet property="delegate" destination="6FO-R6-ReC" id="hci-EN-Muo"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Mis Canciones" id="2P8-kj-PNQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioN-os-2st" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204.34782608695653" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dhb-uc-T7U">
+            <objects>
+                <navigationController id="gCe-Xy-bSc" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2fC-z2-NlT">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6FO-R6-ReC" kind="relationship" relationship="rootViewController" id="3YC-RL-GcV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yrt-w7-qZx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-912" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backward.end.fill" catalog="system" width="128" height="102"/>
+        <image name="forward.end.fill" catalog="system" width="128" height="102"/>
+        <image name="playpause.fill" catalog="system" width="128" height="70"/>
+        <image name="vinilo" width="256" height="256"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
