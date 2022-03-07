@@ -1,4 +1,0 @@
-
-Showing Recent Errors Only
-Value for SWIFT_VERSION cannot be empty.
-
